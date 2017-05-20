@@ -5,11 +5,14 @@
   <title>Franklin, ID | Weather Info</title>
   <meta name="description" content="Get updates on the weather forcast in Franklin, ID.">
   <meta name="viewport" content="width=device-width">
+     <link rel="stylesheet" type="text/css" href="smallscreen.css" >
  </head>
  <body>
    <header>
-<img src="images/logo-blue.jpg" alt="Logo">
+<div class="title">
+<h1><span>&#9856;</span><span>&#9861;</span>Feeling Lucky?</h1>
 <h1>Local Weather</h1>
+</div>
        <nav>
    <ul>
     <li><a href="#" title="Go to home page">Home</a></li>
@@ -19,24 +22,29 @@
        <li><a href="#" title="search">Search</a></li>
    </ul>
 </nav>
- <h1>Franklin, ID</h1>
 </header>
 
 <main>
-<img src="#" alt="Franklin">
+<section class="overview">
+<section class="location_box">
 <h2>Franklin, ID</h2>
+</section>
+<section class="temperature_box">
 <h3>17&deg;</h3>
 <p>&#9728; 17&deg;/3&deg;</p>
     <h4>Sunny</h4>
-<img src="#" alt="Current Conditions">    
+</section>
+</section>
+<section class="cur_conditions"> 
 <h2>Current Conditions</h2>
     <dl>
     <dt>Wind:</dt>
-        <dd>1-5 MPH - Southwest</dd>
+        <dd>1-5 MPH <br> Southwest</dd>
     <dt>Precipitation:</dt>    
         <dd>0 in</dd>
     </dl>
-<img src="#" alt="Hourly Forecast">    
+</section>
+<section class="hourly">  
     <h2> Hourly Forecast</h2>
     <ul>
     <li>6:00am 69</li>
@@ -44,7 +52,7 @@
     <li>8:00am 74</li>
     <li>9:00am 77</li>    
     </ul>
-    
+</section>
 </main>
 <footer>
  &copy;2017 Weather Site | <a href="https://ba-robin.github.io/">Brandy Anninos</a>

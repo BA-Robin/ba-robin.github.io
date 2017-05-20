@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Sansita'); /* Imports Sansita font to webpage*/
+* {
+ box-sizing: border-box; /* changes width property
+    to total width instead of content width */
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figcaption,
+figure {
+ display: block; /* just in case we have
+any older browsers that don't recognize
+the HTML5 semantic elements */
+}
+
+body {
+ margin: 0; /* remove any margin from body */
+ padding: 0; /* ditto for padding */
+ background-color: salmon; /* adds salmon background color*/
+font-family: Helvetica; /* sets all text to Helvetica */
+font-size: 20px; /* set font size to 20 for all body */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Sansita, "second choice", generic-family; /* Sets headings in Sansita font */
+}
+
+h1 span + span {
+    transform: rotate(25deg);
+    display: inline-block;
+}
+
+header {
+    background-color: #A6D8DB; /* sets background color of header */
+}
+
+.location_box {
+    background-color: rgba(200,200,200,.6); /* sets a opaque white color for content box */
+    margin: .2em auto; /* gives separation between content boxes */
+    border: 1px solid; /* makes corners rounded */
+    border-radius: 5px; /* same */
+}
+
+.temperature_box,
+.cur_conditions {
+    background-color: rgba(200,200,200,.6); /* sets a opaque white color for content box */
+    margin: .2em auto; /* gives separation between content boxes */
+    border: 1px solid; /* makes corners rounded */
+    border-radius: 5px; /* same */
+}
+
+main {
+    display: flex; /* main portion of page centered */
+    flex-flow: column nowrap; /* changes flow to vertical */
+    align-items: center; /* same */
+    background-image: url("images/sunny-winter.jpg");
+    background-size: cover;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+dt {
+    float: left;
+    clear: left;
+    width: 100px;
+    text-align: right;
+}
+
+dd {
+     margin: 0 0 0 150px;
+    padding: 0 0 0.5em 0;
+}
+
+h3 {
+    text-align: center; /* moves current temp to center */
+}
+
+p {
+    text-align: right; /* moves Hi/Lo temp to bottom right of box */
+}
+
+.title h1 + h1 {
+    text-align: right; /* moves title to the right */
+    margin-top: -.7em; /* moves title closer title above it */
+    font-size: 20px;
+}
+#franklin {
+    align-content: center; /* centers Franklin, ID heading */
+}
+nav {
+    position: absolute; /*moves nav bar to bottom of page */
+    bottom: 0px; /* same */
+    left: 0;
+    right: 0;
+    background-color: #F07C6C;
+    font-size: 20px;
+    background-color: #F07C6C; /* sets background color of nav */
+}
+
+nav ul {
+    display: flex; /* creates flex box for nav bar */
+    font-size: 16px;
+}
+
+nav ul li {
+    margin-right: 10px; /* adds spaces between links in nav */
+}
+
+ul {
+    list-style-type:none; /* Hides bullet points */
+    padding: 0; /* removes padding from lists */
+}
+
+nav a:link,
+nav a:visited {
+    text-decoration: none;
+    color:#47556F;
+}
+
+nav a:hover {
+    text-decoration: underline;/* underlines hovered over links */
+    color:#E7EF61;
+}
+
+nav a:active {
+     text-decoration: underline;/* underlines hovered over links */
+    color:#A6D8DB;
+}
+
+h4 {
+    display: none; /* Hides current conditin summary */
+}
+
+.hourly {
+    display: none; /* Hides hourly forcast */
+}
+
+footer {
+    padding: 20px;
+    margin: 0 0 10px 0;
+    height: 10px; /* moves footer further from bottom of page */
+    background-color: #A6D8DB; /* sets background color of header */
+    font-size: 14px;
+}

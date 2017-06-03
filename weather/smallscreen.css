@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Sansita'); /* Imports Sansita font to webpage*/
 * {
- box-sizing: border-box; /* changes width property
+box-sizing: border-box; /* changes width property
     to total width instead of content width */
 }
 
@@ -57,6 +57,7 @@ header {
     margin: .2em auto; /* gives separation between content boxes */
     border: 1px solid; /* makes corners rounded */
     border-radius: 5px; /* same */
+    padding: 0 10px 0 10px;
 }
 
 main {
@@ -72,7 +73,6 @@ h2 {
 }
 
 dt {
-    float: left;
     clear: left;
     width: 100px;
     text-align: right;
@@ -143,7 +143,7 @@ h4 {
     display: none; /* Hides current conditin summary */
 }
 
-.hourly {
+#hourly {
     display: none; /* Hides hourly forcast */
 }
 
@@ -153,4 +153,123 @@ footer {
     height: 10px; /* moves footer further from bottom of page */
     background-color: #A6D8DB; /* sets background color of header */
     font-size: 14px;
+}
+
+/******************************************************/
+/* Desktop View */
+/******************************************************/
+@media only screen and (min-width: 768px) {
+    
+main {
+    display:flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+}
+    
+#align_right {
+    display: flex;
+    justify-content: space-around;
+    margin: -40px 0 0 -1000px;
+    font-size: 14px;
+}
+
+header nav {
+    display: flex;
+    border: 1.5px solid;
+}
+header nav ul{
+    font-size: 18px;
+}
+
+#cur_conditions {
+    display: flex;
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
+    order: 1;
+    flex-grow:1;
+    align-content: right;
+}
+
+    
+    .cur_conditions {
+    margin: 75px -200px 400px 100px;
+    }
+    
+#location_temperature {
+    display:flex;
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px; /* makes box in middle flow down in column*/
+    flex-direction:column;
+    justify-content:space-around;
+    order:2;
+    flex-grow: 1;
+}
+
+    .location_box {
+        margin: -100px 10px 0 10px;
+        padding: 0px 20px 0px 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .temperature_box {
+        padding: 20px 20px 0px 20px; 
+        display: flex;
+        flex-grow: .125;
+        align-items:flex-start;
+    }
+ 
+
+.hourly {
+    background-color: rgba(200,200,200,.6); /* sets a opaque white color for content box */
+    margin: .2em auto; /* gives separation between content boxes */
+    border: 1px solid; /* makes corners rounded */
+    border-radius: 5px; /* same */
+    padding: 10px 50px 0 50px;
+}    
+    
+#hourly {
+    display: flex;
+    visibility: visible;
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
+    order: 3;
+    flex-grow:1;
+    align-content: center;
+}
+    
+nav {
+    position:static; /*keeps nav in place */
+    margin:auto;
+    max-width:100%;
+    min-height:20%;
+}
+
+.title h1 + h1 {
+    text-align: left; /*moves title over */
+    margin-top: -.7em;
+    margin-left:3em;
+}
+
+.temperature_box {
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
+    visibility: visible;
+}
+   
+    
+#summary {
+    width:60%;
+    margin-left:30%;
+}
+    
+/*******************************************************/
+    
 }

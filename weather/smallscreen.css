@@ -51,6 +51,10 @@ header {
     border-radius: 5px; /* same */
 }
 
+.location_box img {
+    display: none;
+}
+
 .temperature_box,
 .cur_conditions {
     background-color: rgba(200,200,200,.6); /* sets a opaque white color for content box */
@@ -58,6 +62,10 @@ header {
     border: 1px solid; /* makes corners rounded */
     border-radius: 5px; /* same */
     padding: 0 10px 0 10px;
+}
+
+.cur_conditions img {
+    display: none;
 }
 
 main {
@@ -196,6 +204,14 @@ header nav ul{
     .cur_conditions {
     margin: 75px -200px 400px 100px;
     }
+    
+    .cur_conditions img {
+    display: inline;
+}
+    
+    .location_box img {
+    display: inline;
+}
     
 #location_temperature {
     display:flex;

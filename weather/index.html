@@ -1,13 +1,6 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <title>Weather Home</title>
-  <meta name="viewport" content="width=device-width">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <link rel="stylesheet" href="/jsonweather-html/css/weather-style.css" type="text/css" media="screen">
-</head>
 <!-- *********************************************
 * Who Did You Collaborate With On This Assessment?
 * 1. Brandy Anninos
@@ -16,33 +9,59 @@
 * 4. Jesse Hillman
 * 5.
 * ******************************************** -->
+<head>
+    <meta charset="utf-8">
+	<title> Franklin, ID | Weather</title>
+	<meta name="description" content="Weather for cityDisplay">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="/weather/smallscreen.css">
+</head>
+
 <body>
-  <div id="wrapper">
-    <header id="page-header"></header>
-    <nav id="page-nav"></nav>
-    <main id="page-main">
-      <section class="weather-container">
-        <div id="cover">
-          <div id="status">Loading...</div>
-        </div>
-        <h1 id="cityDisplay"></h1>
-        <h2>Current Conditions</h2>
-        <ul id="current_conditions">
+	<header>
+		<div class="title">
+			<h2 class="big-head"> <span>&#9856;</span><span class="rotate25">&#9861;</span> Feeling Lucky?</h2>
+			<h2 class="small-head">Local Weather</h2>
+		</div>
+	</header>
+	<nav>
+		<ul style="list-style-type:none">
+			<li><a href="index.html" title="Home">Home</a></li>
+			<li><a href="franklin.html" title="Franklin-weather">Franklin</a></li>
+			<li><a href="greenville.html" title="greenville">Greenville</a></li>
+			<li><a href="#" title="Springfield">Springfield</a></li>
+			<li><a href="#" title="Search">Search</a></li>
+		</ul>
+	</nav>
+    
+    
+<main id="main">
+<div id="wrapper">
+<section class="index_cur_conditions">
+<div id="cover">
+<div id="status">Loading...</div>
+</div>
+<h1>Current Conditions</h1>
+    <h2 id="cityDisplay"></h2>
+    <ul id="current_cond">
           <li id="currentTemp"></li>
           <li id="summary"></li>
           <li id="add1"></li>
           <li id="add2"></li>
           <li id="add3"></li>
         </ul>
-      </section>
+</section>
+    </div>
     </main>
-    <footer id="page-footer">
-      <div id="footer-content"></div>
-      <small>Last updated: </small>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<footer>
+		&copy;2017 Weather Site
+		<a href="/index.html">Brandy Anninos</a> 
+		<img src="/jsonweather-html/images/wulogo.png" alt="WUlogo">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="/weather/scripts/modules.js"></script>
     <script src="/weather/scripts/remote_wu.js"></script>
-  </div>
-</body>
+	</footer>
+    </body>
+
 </html>
+

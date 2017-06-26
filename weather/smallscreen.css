@@ -68,6 +68,18 @@ header {
     display: none;
 }
 
+.index_cur_conditions {
+   display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+    background-color: rgba(200,200,200,.6); /* sets a opaque white color for content box */
+    margin: .2em auto; /* gives separation between content boxes */
+    border: 1px solid; /* makes corners rounded */
+    border-radius: 5px; /* same */
+    padding: 0 10px 0 10px;
+}
+
 main {
     display: flex; /* main portion of page centered */
     flex-flow: column nowrap; /* changes flow to vertical */

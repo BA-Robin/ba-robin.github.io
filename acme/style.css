@@ -40,7 +40,7 @@
     width: 100%;
 }
 
-#nav-items ul {
+#navbar ul {
     display: flex;
     align-items: stretch;
     height: 2.5em;
@@ -49,13 +49,8 @@
     list-style: none;
 }
 
-#nav-items li {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
 
-#nav-items {
+#navbar {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -65,10 +60,16 @@
 	padding: 0;
 }
 
-#nav-items a {
+#navbar li {
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbar a {
 	display: flex;
 	color: #ffffff;
-	font-size: 12px;
+	justify-content: center;
+    align-items: center;
 	text-decoration: none;
 	font-weight: bold;
 }

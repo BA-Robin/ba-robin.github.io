@@ -1,6 +1,5 @@
 /* This is  my main CSS file */
 
-@import url('https://fonts.google.com/specimen/Boogaloo?selection.family=Boogaloo');
 * {
 	box-sizing: border-box;
 	/* changes width property
@@ -84,6 +83,12 @@
 	padding-left: 10px;
 }
 */
+
+#greeting {
+    display:flex;
+    justify-content: center;
+    font-size: 20px;
+}
 
 #hero {
 	display: flex;
@@ -183,7 +188,7 @@ tr:nth-child(odd) {
 }
 
 footer {
-	font-size: 12px;
+	font-size: 8px;
 	text-align: center;
 	border-style: solid;
 	border-top: solid #000000;
@@ -198,7 +203,7 @@ footer {
 
 @media only screen and (min-width: 750px) {
 	footer {
-		font-size: 30px;
+		font-size: 18px;
 	}
 	#body {
 		width: 98%
@@ -216,6 +221,13 @@ footer {
 		display: flex;
 		font-size: 20px;
 	}
+    
+    #greeting {
+    display:flex;
+    justify-content: center;
+    font-size: 40px;
+}
+    
 	#hero {
 		flex-direction: row;
 		height: 480px;

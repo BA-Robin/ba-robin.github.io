@@ -40,7 +40,7 @@
     width: 100%;
 }
 
-#navbar ul {
+#nav-items ul {
     display: flex;
     align-items: stretch;
     height: 2.5em;
@@ -50,7 +50,7 @@
 }
 
 
-#navbar {
+#nav-items {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -60,12 +60,7 @@
 	padding: 0;
 }
 
-#navbar li {
-    display: flex;
-    justify-content: space-between;
-}
-
-#navbar a {
+#nav-items a {
 	display: flex;
 	color: #ffffff;
 	justify-content: center;
